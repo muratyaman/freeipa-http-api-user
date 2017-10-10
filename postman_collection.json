@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "service-users",
+		"_postman_id": "88d1f2b8-067e-669d-0054-91d3cb4e4d85",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"url": "http://www.muratyaman.co.uk:8080/api/users/ping",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"haci\",\n\t\"password\": \"unipart2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://www.muratyaman.co.uk:8080/api/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"haci\",\n\t\"password\": \"unipart2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "freeipa login",
+			"request": {
+				"url": "https://ldap.muratyaman.co.uk/ipa/session/login_password",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "haci",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "unipart",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
