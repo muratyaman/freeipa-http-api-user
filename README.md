@@ -1,5 +1,5 @@
-# service-users
-Microservice to manage users
+# freeipa-http-api-users
+A little library to make it easier to login and get user details using FreeIPA HTTP API
 
 ## Requirements
 
